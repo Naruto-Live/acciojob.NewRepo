@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram Clone</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- LEFT SIDEBAR -->
+            <div class="col-md-2 sidebar">
+                <h4 class="logo">Instagram</h4>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><i class="bi bi-house"></i> Home</li>
+                    <li class="nav-item"><i class="bi bi-search"></i> Search</li>
+                    <li class="nav-item"><i class="bi bi-compass"></i> Explore</li>
+                    <li class="nav-item"><i class="bi bi-play-btn"></i> Reels</li>
+                    <li class="nav-item"><i class="bi bi-chat"></i> Messages</li>
+                    <li class="nav-item"><i class="bi bi-heart"></i> Notifications</li>
+                    <li class="nav-item"><i class="bi bi-plus-square"></i> Create</li>
+                    <li class="nav-item"><i class="bi bi-person"></i> Profile</li>
+                </ul>
+            </div>
+
+            <!-- FEED -->
+            <div class="col-md-7 feed">
+
+                <!-- Story Row -->
+                <div class="stories mb-3">
+                    <img src="boy.jpeg" class="story">
+                    <img src="girl.jpg" class="story">
+                    <img src="kakashi.jpg" class="story">
+                    <img src="naruto_insta.jpg" class="story">
+                    <img src="Yuji_chibi.jpeg" class="story">
+                    <img src="kakashi.jpg" class="story">
+                </div>
+
+                <!-- Post -->
+                <div class="post">
+                    <div class="post-header">
+                        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" class="profile-pic">
+                        <span class="username">ayrton_senna <span class="grey">• 5h</span></span>
+
+                    </div>
+
+                    <img src="girl1.jpeg" class="post-img">
+
+                    <div class="post-actions">
+
+                        <i class="bi bi-heart"></i>
+                        <i class="bi bi-chat"></i>
+                        <i class="bi bi-send"></i>
+
+                    </div>
+
+                    <p class="caption">
+                        <strong>ayrton_senna </strong> trying some new style
+                    </p>
+                    <p class="caption">
+                        <strong>See translation</strong>
+                        <br>
+                        <span class="grey">view all 13,384 comments</span>
+                        <br>
+                        <span>Add a comment...</span>
+                    </p>
+                </div>
+
+                <!-- Second Post -->
+                <div class="post">
+                    <div class="post-header">
+                        <img src="supra.jpg" class="profile-pic">
+                        <span class="username">physics_world <span class="grey">• 5h</span></span>
+                    </div>
+
+                    <img src="naruto_insta.jpg" class="post-img">
+
+                    <div class="post-actions">
+                        <i class="bi bi-heart"></i>
+                        <i class="bi bi-chat"></i>
+                        <i class="bi bi-send"></i>
+                    </div>
+
+                    <p class="caption">
+                        <strong>physics_world </strong> watching naruto shippuden , after naruto and sasuke fight
+                    </p>
+                    <p class="caption">
+                        <strong>See translation</strong>
+                        <br>
+                        <span class="grey">view all 13,384 comments</span>
+                        <br>
+                        <span>Add a comment...</span>
+
+                    </p>
+                </div>
+
+
+                <div class="suggestions-wrapper">
+                    <div class="d-flex justify-content-between mb-2">
+                        <small class="text-muted">Suggestions for you</small>
+                        <small class="text-primary">See all</small>
+                    </div>
+
+                    <div class="suggestions">
+
+                        <!-- Card 1 -->
+                        <div class="suggest-card">
+                            <span class="close">×</span>
+                            <img src="kakashi.jpg" />
+                            <h6>Kirti Chadha</h6>
+                            <small>Followed by chirag_sir</small>
+                            <button>Follow</button>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="suggest-card">
+                            <span class="close">×</span>
+                            <img src="girl.jpg" />
+                            <h6>Durgesh Nandini</h6>
+                            <small>Followed by rudrakha__</small>
+                            <button>Follow</button>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="suggest-card">
+                            <span class="close">×</span>
+                            <img src="jackline.jpg" />
+                            <h6>Rohan</h6>
+                            <small>Followed by acha_admi</small>
+                            <button>Follow</button>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="suggest-card">
+                            <span class="close">×</span>
+                            <img src="supra.jpg" />
+                            <h6>Kirti Chadha</h6>
+                            <small>Followed by cute_girl</small>
+                            <button>Follow</button>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="suggest-card">
+                            <span class="close">×</span>
+                            <img src="naruto_insta.jpg" />
+                            <h6>Durgesh Nandini</h6>
+                            <small>Followed by priya_singh</small>
+                            <button>Follow</button>
+                        </div>
+
+
+                        <!-- Card 6 -->
+                        <div class="suggest-card">
+                            <span class="close">×</span>
+                            <img src="boy.jpeg" />
+                            <h6>Kirti Chadha</h6>
+                            <small>Followed by itz_Shruti</small>
+                            <button>Follow</button>
+                        </div>
+
+                        <!-- Card 7 -->
+                        <div class="suggest-card">
+                            <span class="close">×</span>
+                            <img src="supra.jpg" />
+                            <h6>Durgesh Nandini</h6>
+                            <small>Followed by Komal</small>
+                            <button>Follow</button>
+                        </div>
+
+                        <!-- Card 8 -->
+                        <div class="suggest-card">
+                            <span class="close">×</span>
+                            <img src="Yuji_chibi.jpeg" />
+                            <h6>Rohan</h6>
+                            <small>Followed by Gaurav98</small>
+                            <button>Follow</button>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <!-- Post -->
+                <div class="post">
+                    <div class="post-header">
+                        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" class="profile-pic">
+                        <span class="username">ayrton_senna <span class="grey">• 5h</span></span>
+
+                    </div>
+
+                    <img src="girl1.jpeg" class="post-img">
+
+                    <div class="post-actions">
+
+                        <i class="bi bi-heart"></i>
+                        <i class="bi bi-chat"></i>
+                        <i class="bi bi-send"></i>
+
+                    </div>
+
+                    <p class="caption">
+                        <strong>ayrton_senna </strong> trying some new style
+                    </p>
+                    <p class="caption">
+                        <strong>See translation</strong>
+                        <br>
+                        <span class="grey">view all 13,384 comments</span>
+                        <br>
+                        <span>Add a comment...</span>
+                    </p>
+                </div>
+
+                <!-- Second Post -->
+                <div class="post">
+                    <div class="post-header">
+                        <img src="supra.jpg" class="profile-pic">
+                        <span class="username">physics_world <span class="grey">• 5h</span></span>
+                    </div>
+
+                    <img src="naruto_insta.jpg" class="post-img">
+
+                    <div class="post-actions">
+                        <i class="bi bi-heart"></i>
+                        <i class="bi bi-chat"></i>
+                        <i class="bi bi-send"></i>
+                    </div>
+
+                    <p class="caption">
+                        <strong>physics_world </strong> watching naruto shippuden , after naruto and sasuke fight
+                    </p>
+                    <p class="caption">
+                        <strong>See translation</strong>
+                        <br>
+                        <span class="grey">view all 13,384 comments</span>
+                        <br>
+                        <span>Add a comment...</span>
+
+                    </p>
+                </div>
+
+
+            </div>
+
+            <!-- RIGHT SIDEBAR -->
+            <div class="col-md-3 rightbar">
+                <h6 class="grey">Suggestions for you</h6>
+
+                <div class="suggestion">
+                    <img src="jackline.jpg">
+                    <span>developer_dhruv</span>
+                    <button class="btn btn-sm btn-primary">Follow</button>
+                </div>
+
+                <div class="suggestion">
+                    <img src="revCow.jpg">
+                    <span>web_design</span>
+                    <button class="btn btn-sm btn-primary">Follow</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
