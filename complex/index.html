@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Complex UI</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand fw-bold" href="#">Complex UI</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="nav">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item"><a class="nav-link" href="#">Section 1</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Section 2</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Section 3</a></li>
+					</ul>
+					<form class="d-flex" role="search">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Search</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+
+		<header>
+			<div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1506089676908-3592f7389d4d?auto=format&fit=crop&w=1920&q=80')">
+					<div class="overlay d-flex flex-column justify-content-center align-items-center text-center px-3">
+						<p class="text-uppercase text-white mb-2 small letter-spacing">Explore the skyline</p>
+						<h1 class="display-5 text-white mb-3">Beautiful city views for modern brands</h1>
+						<p class="text-white mb-4 lead">Design a polished interface with Bootstrap and clean layout patterns.</p>
+						<a href="#features" class="btn btn-primary btn-lg">Discover More</a>
+					</div>
+				</div>
+				<div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1920&q=80')">
+					<div class="overlay d-flex flex-column justify-content-center align-items-center text-center px-3">
+						<p class="text-uppercase text-white mb-2 small letter-spacing">Creative solutions</p>
+						<h1 class="display-5 text-white mb-3">Build engaging layouts with ease</h1>
+						<p class="text-white mb-4 lead">Use Bootstrap components and custom CSS to bring the UI to life.</p>
+						<a href="#gallery" class="btn btn-primary btn-lg">View Gallery</a>
+					</div>
+				</div>
+				<div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1920&q=80')">
+					<div class="overlay d-flex flex-column justify-content-center align-items-center text-center px-3">
+						<p class="text-uppercase text-white mb-2 small letter-spacing">Premium design</p>
+						<h1 class="display-5 text-white mb-3">Responsive components for every screen</h1>
+						<p class="text-white mb-4 lead">Fast, accessible, and visually appealing website UI patterns.</p>
+						<a href="#cards" class="btn btn-primary btn-lg">See Cards</a>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</header>
+
+	<main class="py-5">
+			<div class="container">
+				<section id="features" class="mb-5">
+					<div class="row g-4">
+
+						<div class="col-lg-4">
+							<div class="feature-box p-4 rounded shadow-sm h-100 text-center">
+								<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=60" alt="Plan and design" class="img-fluid rounded mb-3">
+								<h3>Design Consultation</h3>
+								<p class="text-muted">A modern interface that supports all screen sizes and devices.</p>
+							</div>
+						</div>
+
+						<div class="col-lg-4">
+							<div class="feature-box p-4 rounded shadow-sm h-100 text-center">
+								<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=60" alt="Collaboration" class="img-fluid rounded mb-3">
+								<h3>Flexible Layouts</h3>
+								<p class="text-muted">Custom sections with a balanced grid, cards, and CTA elements.</p>
+							</div>
+						</div>
+
+						<div class="col-lg-4">
+							<div class="feature-box p-4 rounded shadow-sm h-100 text-center">
+								<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=60" alt="Launch" class="img-fluid rounded mb-3">
+								<h3>Quick Launch</h3>
+								<p class="text-muted">Easy to update, accessible, and built with Bootstrap best practices.</p>
+							</div>
+						</div>
+						
+					</div>
+				</section>
+
+
+
+				<section id="gallerykml">
+                    <div class="gallery-grid">
+                        <div class="gallery-item hero" data-label="300 x 200">
+                        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=70" alt="Large left image">
+                        </div>
+                        <div class="gallery-item hero-top" data-label="300 x 200">
+                        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=70" alt="Top middle image1">
+                        </div>
+                        <div class="gallery-item hero-to" data-label="300 x 200">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=70" alt="Top middle image2">
+                        </div>
+                        <div class="gallery-item hero-top-right" data-label="300 x 200">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=70" alt="Top right image">
+                        </div>
+                        <div class="gallery-item hero-mid" data-label="300 x 200">
+                        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=70" alt="Middle middle image1">
+                        </div>
+                        <div class="gallery-item hero-mi" data-label="300 x 200">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=70" alt="Middle middle image2">
+                        </div>
+                        <div class="gallery-item hero-mid-right" data-label="300 x 200">
+                        <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=800&q=70" alt="Middle right image">
+                        </div>
+                        <div class="gallery-item footer-left" data-label="300 x 200">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=70" alt="Bottom wide image">
+                        </div>
+                        <div class="gallery-item footer-right" data-label="300 x 200">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=70" alt="Bottom right image">
+                        </div>
+                    </div>
+				</section>
+
+
+
+				<section id="cards" class="mb-5">
+					<div class="text-center mb-4">
+						<h2 class="h4">Featured Cards</h2>
+						<p class="text-muted">Responsive Bootstrap cards with images, titles, and calls to action.</p>
+					</div>
+					<div class="row g-4">
+						<div class="col-md-4">
+							<div class="card h-100 shadow-sm">
+								<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=70" class="card-img-top" alt="UI design">
+								<div class="card-body">
+									<h5 class="card-title">Creative UI Kits</h5>
+									<p class="card-text text-muted">Well-crafted UI components ready for modern web projects.</p>
+									<a href="#" class="btn btn-primary">Call to Action</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card h-100 shadow-sm">
+								<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=70" class="card-img-top" alt="Teamwork">
+								<div class="card-body">
+									<h5 class="card-title">Team Collaboration</h5>
+									<p class="card-text text-muted">Share ideas and build high-quality design systems together.</p>
+									<a href="#" class="btn btn-primary">Call to Action</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card h-100 shadow-sm">
+								<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=70" class="card-img-top" alt="Launch project">
+								<div class="card-body">
+									<h5 class="card-title">Launch Ready</h5>
+									<p class="card-text text-muted">A polished experience that looks great on desktop and mobile.</p>
+									<a href="#" class="btn btn-primary">Call to Action</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+
+		<footer class="bg-light pt-5 pb-4">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<h5>Useful Links</h5>
+						<ul class="list-unstyled">
+							<li><a href="#">Link 1</a></li>
+							<li><a href="#">Link 2</a></li>
+							<li><a href="#">Link 3</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<h5>More Links</h5>
+						<ul class="list-unstyled">
+							<li><a href="#">Link 4</a></li>
+							<li><a href="#">Link 5</a></li>
+							<li><a href="#">Link 6</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<h5>Contact Us</h5>
+						<p>Email: example@example.com</p>
+						<p>Phone: +1 (555) 123-4567</p>
+					</div>
+				</div>
+
+				<div class="row mt-4 align-items-center">
+					<div class="col-md-8">
+						<p class="mb-0">© 2023 Complex UI. All Rights Reserved.</p>
+					</div>
+					<div class="col-md-4 text-end">
+						<button id="backToTop" class="btn btn-primary">Back to Top</button>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script>
+			// back to top
+			document.getElementById('backToTop').addEventListener('click', function(){
+				window.scrollTo({top:0,behavior:'smooth'});
+			});
+		</script>
+	</body>
+</html>
+
