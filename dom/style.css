@@ -1,0 +1,67 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 35px 55px;
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 60px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 18px;
+  color: lightgray;
+}
+
+hr {
+  width: 13% !important;
+  margin-top: 10px;
+  border-color: lightgray !important;
+}
+
+.display {
+  margin-bottom: 30px;
+}
+
+#countDisplay {
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  gap: 13px;
+}
+
+.btn {
+  border-radius: 0px;
+  border: 1px solid lightgray;
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+.error-message {
+  color: brown;
+  margin: 0px 0px 30px 0px;
+}
+
+.btn:disabled {
+  background-color: lightblue;
+  cursor: not-allowed;
+}
