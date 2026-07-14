@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#d9d9d9;
+}
+
+header{
+    background:black;
+    color:white;
+    padding:20px;
+}
+
+.container{
+    padding:20px;
+}
+
+.search-box{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.search-box input{
+    flex:1;
+    padding:12px;
+    font-size:18px;
+}
+
+.search-box button{
+    width:170px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+    gap:10px;
+}
+
+.buttons button{
+    flex:1;
+}
+
+button{
+    padding:15px;
+    border:none;
+    background:black;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th,td{
+    border:1px solid gray;
+    padding:12px;
+    text-align:left;
+}
+
+.name-cell{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.name-cell img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+}
