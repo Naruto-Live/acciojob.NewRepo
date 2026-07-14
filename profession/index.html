@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Emplyees List</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h5>New Employees</h5>
+        <div class="input_box">
+            <div class="name_box">
+                <label>Enter Name</label>
+                <input type="text" placeholder="Enter Name" id="name" />
+            </div>
+            <div class="profession_box">
+                <label>Enter Profession</label>
+                <input type="text" placeholder="Enter Profession" id="profession" />
+            </div>
+            <div class="age_box">
+                <label>Enter Age</label>
+                <input type="text" placeholder="Enter Age" id="age" />
+            </div>
+        </div>
+        <button class="btn" onclick="handleSubmit()">Add User</button>
+        <div class="msg" id="msg_ref">
+
+        </div>
+        <p class="added_emp">Added Emplyees</p>
+        <div class="list_container" id="container"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
