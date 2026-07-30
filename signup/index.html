@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp challenge</title>
+    <link rel="shortcut icon" href="img/My LOGO.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+</head>
+<body>
+
+
+    <section id="main">
+        <div class="form">
+            <form action="submit" method="post" id="form_element" onchange="allGoodToGo()">
+
+                <label for="email">Email</label>
+
+                <input type="text" id="email" placeholder="Example@email.com" onchange="checkEmail()">
+                <p class="wrong" id="para1">Make sure email is more than 3 characters and has @ and a .</p>
+
+
+                <label for="password">Password</label>
+
+                <input type="text" id="password" placeholder="Your Password" onchange="checkPassword()">
+                <p class="wrong" id="para2">Make sure password is more than 8 characters.</p>
+            </form>
+            <button class="submit" onclick="confirmWindow()">Submit</button>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+    
+
+</body></html>

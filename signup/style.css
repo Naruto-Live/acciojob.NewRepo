@@ -1,0 +1,98 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: bisque;
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 498px;
+    height: 250px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0px 25px;
+    border-radius: 3px;
+}
+form{
+    background-color: white;
+}
+label{
+    display: block;
+    background-color: white;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+input{
+    background-color: white;
+    width: 360px;
+    height: 28px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 12px;
+    font-weight: 400;
+    color: black;
+    margin-top: 5px;
+    padding: 10px;
+}
+button{
+    width: 128px;
+    height: 27px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+.wrong{
+    font-size: 12px;
+    font-weight: 400;
+    color: #FF0000;
+    background-color: white;
+    margin-top: 10px;
+}
+.correct{
+    font-size: 12px;
+    font-weight: 400;
+    color: #219F35;
+    background-color: white;
+    margin-top: 18px;
+    margin-left: 2px;
+}
+
+@media screen and (max-width: 532px) {
+    .form{
+        width: 390px;
+        height: 290px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 0px 25px;
+        border-radius: 3px;
+    }
+    input{
+        width: 265px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .form{
+        width: 315px;
+        height: 290px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 0px 25px;
+        border-radius: 3px;
+    }
+    input{
+        width: 265px;
+    }
+}
