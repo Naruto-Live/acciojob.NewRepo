@@ -1,0 +1,414 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Odering System</title>
+    <link rel="shortcut icon" href="img/My LOGO.jpg" type="image/x-icon">
+
+    <!-- Google Font is liked here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+
+    <!-- Css is liked here -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- This section the Side Bar, Nav and Hero Image -->
+    <section class="main">
+        <div class="side-bar">
+            <div class="close">
+                ✖
+            </div>
+            <img src="img/—Pngtree—javanese character with blangkon holding_8999487 1.png" alt="logo">
+            <p class="small-heading">Your Restaurant Menu</p>
+            <p class="slogan">Your Slogan</p>
+            <hr>
+            <div class="quick-links">
+                <p class="small-heading mar-bottom">Quick Links</p>
+                <ul>
+                    <li><a href="">1. Home</a></li>
+                    <li><a href="">2. Your Order</a></li>
+                    <li><a href="">3. Wallet</a></li>
+                    <li><a href="">4. Profile</a></li>
+                    <li><a href="">5. Logout</a></li>
+                    <li onclick="secondScreen()"><a>6. Menu/secondScreen</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="more-about-us">
+                <p class="small-heading mar-bottom">More About Us</p>
+                <ul>
+                    <li><a href="">1. Our Blog</a></li>
+                    <li><a href="">2. Upcoming Dishes</a></li>
+                    <li><a href="">3. Our Story</a></li>
+                    <li><a href="">4. Social Media Links</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="nav-element">
+                <div class="hamburger">
+                    <div class="open">
+                        ☰
+                    </div>
+                </div>
+                <div class="search">
+                    <form>
+                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                        <input type="text" placeholder="Search Food Item">
+                    </form>
+                </div>
+                <button class="red-btn signup">Signup</button>
+                <button class="red-btn">Login</button>
+                <img src="img/—Pngtree—javanese character with blangkon holding_8999487 1.png" alt="" class="small-logo">
+            </div>
+            <div class="helping-class">
+                
+            </div>
+            <div class="hero-img">
+                <img src="img/Screenshot 2023-07-14 at 11.14 1.png" alt="" class="main_hero_img">
+            </div>
+
+            <!-- This section content the menu items -->
+            <section class="menu">
+                <p class="small-heading">Menu</p>
+                <div class="card-section">
+                
+                
+        <div class="card">
+            <img src="https://unsplash.com/photos/double-patty-cheeseburger-jh5XyK4Rr3Y" alt="" class="card-main-img">
+            <div class="card-content">
+                <div class="card-start-content">
+                    <p class="food-name">Cheeseburger</p>
+                    <p class="cost">$5.99/-</p>
+                </div>
+                <div class="card-end-content">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://unsplash.com/photos/pizza-with-berries-MQUqbmszGGM" alt="" class="card-main-img">
+            <div class="card-content">
+                <div class="card-start-content">
+                    <p class="food-name">Pizza</p>
+                    <p class="cost">$8.99/-</p>
+                </div>
+                <div class="card-end-content">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://unsplash.com/photos/two-tortillas-with-vegetables-and-sauce-on-a-table-VMrIQ9hDaZk" alt="" class="card-main-img">
+            <div class="card-content">
+                <div class="card-start-content">
+                    <p class="food-name">Tacos</p>
+                    <p class="cost">$3.99/-</p>
+                </div>
+                <div class="card-end-content">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://unsplash.com/photos/sushi-on-black-ceramic-plate-iOHJKJqO6E0" alt="" class="card-main-img">
+            <div class="card-content">
+                <div class="card-start-content">
+                    <p class="food-name">Sushi</p>
+                    <p class="cost">$11.99/-</p>
+                </div>
+                <div class="card-end-content">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://unsplash.com/photos/closeup-photo-of-spaghetti-pasta-with-a-tomato-meat-sauce-shot-with-selective-focus-Gi4njnD6isM" alt="" class="card-main-img">
+            <div class="card-content">
+                <div class="card-start-content">
+                    <p class="food-name">Pasta</p>
+                    <p class="cost">$9.99/-</p>
+                </div>
+                <div class="card-end-content">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://unsplash.com/photos/food-lot-on-a-green-leaf-plate-nwmZhwOSVnM" alt="" class="card-main-img">
+            <div class="card-content">
+                <div class="card-start-content">
+                    <p class="food-name">Fried Chicken</p>
+                    <p class="cost">$7.99/-</p>
+                </div>
+                <div class="card-end-content">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://unsplash.com/photos/bread-with-cheese-fillings-on-white-ceramic-plate-ZB8NK8cB4EE" alt="" class="card-main-img">
+            <div class="card-content">
+                <div class="card-start-content">
+                    <p class="food-name">Grilled Cheese Sandwich</p>
+                    <p class="cost">$4.99/-</p>
+                </div>
+                <div class="card-end-content">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://unsplash.com/photos/grilled-meat-on-white-ceramic-plate-pe9dvM1rQkM" alt="" class="card-main-img">
+            <div class="card-content">
+                <div class="card-start-content">
+                    <p class="food-name">Steak</p>
+                    <p class="cost">$15.99/-</p>
+                </div>
+                <div class="card-end-content">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://unsplash.com/photos/meat-with-lettuce-on-white-ceramic-plate-63mHpYEyjCA" alt="" class="card-main-img">
+            <div class="card-content">
+                <div class="card-start-content">
+                    <p class="food-name">Caesar Salad</p>
+                    <p class="cost">$6.99/-</p>
+                </div>
+                <div class="card-end-content">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://unsplash.com/photos/fried-chicken-with-fries-and-sauce-Pf-bZQpCaMI" alt="" class="card-main-img">
+            <div class="card-content">
+                <div class="card-start-content">
+                    <p class="food-name">Fish and Chips</p>
+                    <p class="cost">$8.49/-</p>
+                </div>
+                <div class="card-end-content">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://unsplash.com/photos/a-bowl-of-ramen-with-chopsticks-and-a-glass-of-beer-mE6kjov4rTg" alt="" class="card-main-img">
+            <div class="card-content">
+                <div class="card-start-content">
+                    <p class="food-name">Ramen</p>
+                    <p class="cost">$9.49/-</p>
+                </div>
+                <div class="card-end-content">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://source.unsplash.com/random/1920x1080/?burrito" alt="" class="card-main-img">
+            <div class="card-content">
+                <div class="card-start-content">
+                    <p class="food-name">Burrito</p>
+                    <p class="cost">$7.49/-</p>
+                </div>
+                <div class="card-end-content">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://source.unsplash.com/random/1920x1080/?pho" alt="" class="card-main-img">
+            <div class="card-content">
+                <div class="card-start-content">
+                    <p class="food-name">Pho</p>
+                    <p class="cost">$8.99/-</p>
+                </div>
+                <div class="card-end-content">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://source.unsplash.com/random/1920x1080/?pad_thai" alt="" class="card-main-img">
+            <div class="card-content">
+                <div class="card-start-content">
+                    <p class="food-name">Pad Thai</p>
+                    <p class="cost">$9.99/-</p>
+                </div>
+                <div class="card-end-content">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://source.unsplash.com/random/1920x1080/?gyro" alt="" class="card-main-img">
+            <div class="card-content">
+                <div class="card-start-content">
+                    <p class="food-name">Gyro</p>
+                    <p class="cost">$6.49/-</p>
+                </div>
+                <div class="card-end-content">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://source.unsplash.com/random/1920x1080/?ice_cream" alt="" class="card-main-img">
+            <div class="card-content">
+                <div class="card-start-content">
+                    <p class="food-name">Ice Cream</p>
+                    <p class="cost">$3.99/-</p>
+                </div>
+                <div class="card-end-content">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://source.unsplash.com/random/1920x1080/?smoothie" alt="" class="card-main-img">
+            <div class="card-content">
+                <div class="card-start-content">
+                    <p class="food-name">Smoothie</p>
+                    <p class="cost">$4.99/-</p>
+                </div>
+                <div class="card-end-content">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://source.unsplash.com/random/1920x1080/?apple_pie" alt="" class="card-main-img">
+            <div class="card-content">
+                <div class="card-start-content">
+                    <p class="food-name">Apple Pie</p>
+                    <p class="cost">$4.49/-</p>
+                </div>
+                <div class="card-end-content">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://source.unsplash.com/random/1920x1080/?chocolate_cake" alt="" class="card-main-img">
+            <div class="card-content">
+                <div class="card-start-content">
+                    <p class="food-name">Chocolate Cake</p>
+                    <p class="cost">$5.49/-</p>
+                </div>
+                <div class="card-end-content">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://source.unsplash.com/random/1920x1080/?pancakes" alt="" class="card-main-img">
+            <div class="card-content">
+                <div class="card-start-content">
+                    <p class="food-name">Pancakes</p>
+                    <p class="cost">$4.99/-</p>
+                </div>
+                <div class="card-end-content">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://source.unsplash.com/random/1920x1080/?cupcake" alt="" class="card-main-img">
+            <div class="card-content">
+                <div class="card-start-content">
+                    <p class="food-name">Cupcake</p>
+                    <p class="cost">$2.99/-</p>
+                </div>
+                <div class="card-end-content">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://source.unsplash.com/random/1920x1080/?crepes" alt="" class="card-main-img">
+            <div class="card-content">
+                <div class="card-start-content">
+                    <p class="food-name">Crepes</p>
+                    <p class="cost">$5.99/-</p>
+                </div>
+                <div class="card-end-content">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://source.unsplash.com/random/1920x1080/?club_sandwich" alt="" class="card-main-img">
+            <div class="card-content">
+                <div class="card-start-content">
+                    <p class="food-name">Club Sandwich</p>
+                    <p class="cost">$6.99/-</p>
+                </div>
+                <div class="card-end-content">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://source.unsplash.com/random/1920x1080/?falafel" alt="" class="card-main-img">
+            <div class="card-content">
+                <div class="card-start-content">
+                    <p class="food-name">Falafel</p>
+                    <p class="cost">$5.49/-</p>
+                </div>
+                <div class="card-end-content">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://source.unsplash.com/random/1920x1080/?curry" alt="" class="card-main-img">
+            <div class="card-content">
+                <div class="card-start-content">
+                    <p class="food-name">Curry</p>
+                    <p class="cost">$9.49/-</p>
+                </div>
+                <div class="card-end-content">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+            </section>
+
+        </div>
+    </section>
+
+    <!-- JavaScript Here -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
+

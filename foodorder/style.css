@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color:#111315;
+}
+
+
+/*Utility css class*/
+.small-heading{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: white;
+    align-self: center;
+}
+.red-btn{
+    height: 46px;
+    width: 156px;
+    background-color: #FF2424;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.red-btn:hover{
+    background-color: #f73b3b;
+}
+
+@media screen and (max-width:1330px) {
+    .small-heading{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+        color: white;
+        align-self: center;
+    }
+    .red-btn{
+        height: 46px;
+        width: 116px;
+        background-color: #FF2424;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+        border: none;
+        border-radius: 5px;
+        color: white;
+    }
+}
+@media screen and (max-width:780px){
+    .red-btn{
+        height: 46px;
+        width: 90px;
+        background-color: #FF2424;
+        font-size: 15px;
+        line-height: 17px;
+        font-weight: 400;
+        border: none;
+        border-radius: 5px;
+        color: white;
+    }
+}
+@media screen and (max-width:431px){
+    .red-btn{
+        height: 32px;
+        width: 65px;
+        background-color: #FF2424;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+        border: none;
+        border-radius: 2px;
+        color: white;
+    }
+    .signup{
+        display: none;
+    }
+}
+
+
+/*section main css written here*/
+.side-bar img{
+    height: 60%;
+    width: 70%;
+}
+.slogan{
+    color: #FF2424;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    align-self: center;
+}
+ul li a{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+}
+input{
+    width: 100%;
+    height: 100%;
+    background-color:#272A30;
+    color:#878787;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: none;
+    padding: 0px 40px;
+}
+.search{
+    width: 65%;
+}
+form{
+    height: 46px;
+    border-radius: 5px;
+    background-color:#272A30;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+i{
+    position: absolute;
+    margin-left: 10px;
+    color: #878787;
+}
+.side-bar{
+    background-color: #0C0E10;
+    width: 22%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.side-bar img{
+    margin-left: 38px;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+.quick-links, .more-about-us{
+    display: flex;
+    flex-direction: column;
+}
+hr{
+    border: 1px solid #1C2025;
+    margin: 20px 0px 20px 0px;
+}
+.mar-bottom{
+    margin-bottom: 20px;
+}
+.main-content{
+    width: 78%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.nav-element{
+    width: 78%;
+    height: 73px;
+    background-color:#191D20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+.helping-class{
+    height: 73px;
+}
+.hamburger{
+    display: none;
+}
+.close{
+    display: none;
+    color: white;
+    font-size: 32px;
+    height: 10vh;
+    padding: 10px 20px;
+}
+.small-logo{
+    width: 58px;
+    height: 58px;
+    margin-right: 10px;
+}
+.hero-img img{
+    width: 100%;
+    height: 50vh;
+    padding: 20px 20px 0px 20px;
+}
+.menu{
+    padding: 0px 20px;
+    margin: 20px 0px 20px 0px;
+}
+.card{
+    width: 360px;
+    height: 320px;
+    background-color: #191D20;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.card-main-img{
+    width: 340px;
+    height: 220px;
+    border-radius: 7px;
+}
+.card-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+}
+.food-name{
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 600;
+}
+.cost{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.card-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+.card-end-content{
+    cursor: pointer;
+}
+.card-start-content{
+    width: 65%;
+}
+.food-name{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+ul li{
+    cursor: pointer;
+}
+
+@media screen and (max-width:1490px){
+    form{
+        height: 46px;
+        border-radius: 5px;
+        background-color:#272A30;
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+    }
+    .search{
+        width: 55%;
+    }
+    .slogan{
+        color: #FF2424;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        align-self: center;
+    }
+    ul li a{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: white;
+        text-decoration: none;
+        padding-left: 20px;
+    }
+    .food-name{
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 600;
+    }
+    .cost{
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        margin-top: 5px;
+    }
+    .card{
+        width: 225px;
+        height: 200px;
+        background-color: #191D20;
+        color: white;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .card-main-img{
+        width: 205px;
+        height: 115px;
+        border-radius: 7px;
+    }
+    .hero-img img{
+        width: 100%;
+        height: 50vh;
+        padding: 20px 20px 0px 20px;
+    }
+    .menu{
+        padding: 0px 25px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width:980px){
+    .search{
+        width: 55%;
+    }
+    .side-bar{
+        display: none;
+    }
+    .main-content{
+        width: 100%;
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+    .nav-element{
+        width: 100%;
+        height: 73px;
+        background-color:#191D20;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        padding: 0px 20px;
+    }
+    .hamburger{
+        display: inline;
+        color: white;
+        font-size: 32px;
+    }
+    .small-logo{
+        width: 58px;
+        height: 58px;
+        margin-right: 0px;
+    }
+    .side-bar{
+        position: fixed;
+        z-index: 2000;
+        width: 300px;
+    }
+    .card-section{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:740px){
+    .card{
+        width: 300px;
+        height: 250px;
+        background-color: #191D20;
+        color: white;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .card-main-img{
+        width: 280px;
+        height: 165px;
+        border-radius: 7px;
+    }
+}
+@media screen and (max-width:660px){
+    .card{
+        width: 183px;
+        height: 200px;
+        background-color: #191D20;
+        color: white;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .card-main-img{
+        width: 163px;
+        height: 118px;
+        border-radius: 7px;
+    }
+    .hero-img img{
+        height: 30vh;
+    }
+    .search{
+        width: 40%;
+    }
+}
+@media screen and (max-width:431px){
+    .search{
+        width: 50%;
+    }
+    input{
+        font-size: 14px;
+    }
+    form{
+        height: 32px;
+        border-radius: 2px;
+        background-color:#272A30;
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    .small-logo{
+        width: 38px;
+        height: 38px;
+    }
+    .open{
+        font-size: 24px;
+    }
+    .close{
+        font-size: 24px;
+    }
+    .nav-element{
+        width: 100%;
+        height: 55px;
+        background-color:#191D20;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+    }
+}
+@media screen and (max-width:426px){
+    .card{
+        width: 165px;
+        height: 180px;
+        background-color: #191D20;
+        color: white;
+        border-radius: 10px;
+        padding: 5px;
+        margin-top: 20px;
+    }
+    .card-main-img{
+        width: 155px;
+        height: 100px;
+        border-radius: 7px;
+    }
+    .card-end-content img{
+        width: 35px;
+        height: 35px;
+    }
+    .food-name{
+        font-size: 16px;
+    }
+    .cost{
+        font-size: 14px;
+    }
+    .hero-img img{
+        height: 25vh;
+    }
+}
+@media screen and (max-width:391px){
+    .card{
+        width: 140px;
+        height: 170px;
+        background-color: #191D20;
+        color: white;
+        border-radius: 10px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+    .card-main-img{
+        width: 130px;
+        height: 95px;
+        border-radius: 7px;
+    }
+}
+@media screen and (max-width:358px){
+    .card{
+        width: 131px;
+        height: 160px;
+        background-color: #191D20;
+        color: white;
+        border-radius: 10px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+    .card-main-img{
+        width: 120px;
+        height: 95px;
+        border-radius: 7px;
+    }
+    .food-name{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .cost{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .food-name{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
