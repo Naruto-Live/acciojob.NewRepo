@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IP Address Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- TOP INFORMATION -->
+        <section class="top-section">
+
+            <div class="top-item">
+                <span>IP Address:</span>
+                <strong id="ip-address">---</strong>
+            </div>
+
+            <div class="top-item">
+                <span>Lat:</span>
+                <strong id="latitude">---</strong>
+            </div>
+
+            <div class="top-item">
+                <span>Long:</span>
+                <strong id="longitude">---</strong>
+            </div>
+
+            <div class="top-item">
+                <span>City:</span>
+                <strong id="city">---</strong>
+            </div>
+
+            <div class="top-item">
+                <span>Region:</span>
+                <strong id="region">---</strong>
+            </div>
+
+            <div class="top-item">
+                <span>Organization:</span>
+                <strong id="organization">---</strong>
+            </div>
+
+            <div class="top-item">
+                <span>Hostname:</span>
+                <strong id="hostname">---</strong>
+            </div>
+
+        </section>
+
+
+        <!-- INITIAL STATE -->
+        <section id="initial-screen" class="initial-screen">
+
+            <div class="illustration">
+                <h2>Before Clicking button</h2>
+
+                <div class="illustration-box">
+                    <img src="illustration.png" alt="Illustration">
+                </div>
+            </div>
+
+            <div class="ip-display">
+
+                <p>Your Current IP Address is:</p>
+
+                <strong id="initial-ip">Loading...</strong>
+
+                <button id="get-info-btn">
+                    Get Data
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESULT SCREEN -->
+        <section id="result-screen" class="result-screen hidden">
+
+            <!-- MAP -->
+            <section class="location-section">
+
+                <h2>Your Current Location</h2>
+
+                <iframe
+                    id="map"
+                    title="User Location"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+
+            </section>
+
+
+            <!-- MORE INFORMATION -->
+            <section class="more-info">
+
+                <h2>More Information About You</h2>
+
+                <div class="info-grid">
+
+                    <div>
+                        <span>Time Zone</span>
+                        <strong id="timezone">---</strong>
+                    </div>
+
+                    <div>
+                        <span>Date and Time</span>
+                        <strong id="date-time">---</strong>
+                    </div>
+
+                    <div>
+                        <span>Pincode</span>
+                        <strong id="pincode">---</strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- POST OFFICES -->
+            <section class="post-office-section">
+
+                <h2>Post Offices Near You</h2>
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search by Name"
+                >
+
+                <div id="post-office-list" class="post-office-list">
+                    <!-- Cards will be generated here -->
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <!-- ERROR -->
+        <p id="error-message"></p>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
