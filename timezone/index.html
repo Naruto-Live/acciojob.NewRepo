@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TimeZone API</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>TimeZone API</h1>
+
+        <!-- CURRENT TIMEZONE -->
+        <section class="current-section">
+
+            <h2>Your Current Time Zone</h2>
+
+            <div class="timezone-card">
+
+                <p>Name Of Time Zone : <span id="current-name"></span></p>
+
+                <div class="coordinates">
+                    <p>Lat: <span id="current-lat"></span></p>
+                    <p>Long: <span id="current-lon"></span></p>
+                </div>
+
+                <p>Offset STD: <span id="current-std"></span></p>
+                <p>Offset STD Seconds: <span id="current-std-seconds"></span></p>
+
+                <p>Offset DST : <span id="current-dst"></span></p>
+                <p>Offset DST Seconds: <span id="current-dst-seconds"></span></p>
+
+                <p>Country: <span id="current-country"></span></p>
+                <p>Postcode: <span id="current-postcode"></span></p>
+                <p>City: <span id="current-city"></span></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ADDRESS SEARCH -->
+        <section class="search-section">
+
+            <h2>Enter Address</h2>
+
+            <form id="address-form">
+
+                <input
+                    type="text"
+                    id="address"
+                    placeholder="e.g. New Delhi"
+                >
+
+                <button type="submit">
+                    Submit
+                </button>
+
+            </form>
+
+            <p id="error-message"></p>
+
+        </section>
+
+
+        <!-- SEARCH RESULT -->
+        <section id="result-section" class="result-section hidden">
+
+            <h2>Your result</h2>
+
+            <div class="timezone-card result-card">
+
+                <p>Name Of Time Zone : <span id="result-name"></span></p>
+
+                <div class="coordinates">
+                    <p>Lat: <span id="result-lat"></span></p>
+                    <p>Long: <span id="result-lon"></span></p>
+                </div>
+
+                <p>Offset STD: <span id="result-std"></span></p>
+                <p>Offset STD Seconds: <span id="result-std-seconds"></span></p>
+
+                <p>Offset DST : <span id="result-dst"></span></p>
+                <p>Offset DST Seconds: <span id="result-dst-seconds"></span></p>
+
+                <p>Country: <span id="result-country"></span></p>
+                <p>Postcode: <span id="result-postcode"></span></p>
+                <p>City: <span id="result-city"></span></p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
