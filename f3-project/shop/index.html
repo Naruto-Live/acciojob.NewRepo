@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>MeShop.</title>
+
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
+
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="brand">
+            <a href="../index.html">
+                MeShop.
+            </a>
+        </div>
+
+        <div class="nav-items">
+
+            <a href="index.html">
+                Shop
+            </a>
+
+            <a href="../cart/index.html">
+                My Cart
+            </a>
+
+            <a href="../profile/index.html">
+                Profile
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <main>
+
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
+
+        <aside>
+
+            <section>
+
+                <h3>Colors</h3>
+
+                <ul>
+
+                    <li>
+                        <input
+                            id="red"
+                            type="checkbox"
+                            name="color"
+                        >
+                        <label for="red">
+                            Red
+                        </label>
+                    </li>
+
+                    <li>
+                        <input
+                            id="blue"
+                            type="checkbox"
+                            name="color"
+                        >
+                        <label for="blue">
+                            Blue
+                        </label>
+                    </li>
+
+                    <li>
+                        <input
+                            id="green"
+                            type="checkbox"
+                            name="color"
+                        >
+                        <label for="green">
+                            Green
+                        </label>
+                    </li>
+
+                    <li>
+                        <input
+                            id="black"
+                            type="checkbox"
+                            name="color"
+                        >
+                        <label for="black">
+                            Black
+                        </label>
+                    </li>
+
+                    <li>
+                        <input
+                            id="white"
+                            type="checkbox"
+                            name="color"
+                        >
+                        <label for="white">
+                            White
+                        </label>
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+            <section>
+
+                <h3>Sizes</h3>
+
+                <ul>
+
+                    <li>
+                        <input
+                            id="s"
+                            type="checkbox"
+                        >
+                        <label for="s">S</label>
+                    </li>
+
+                    <li>
+                        <input
+                            id="m"
+                            type="checkbox"
+                        >
+                        <label for="m">M</label>
+                    </li>
+
+                    <li>
+                        <input
+                            id="l"
+                            type="checkbox"
+                        >
+                        <label for="l">L</label>
+                    </li>
+
+                    <li>
+                        <input
+                            id="xl"
+                            type="checkbox"
+                        >
+                        <label for="xl">XL</label>
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+            <section>
+
+                <h3>Rating</h3>
+
+                <input
+                    type="range"
+                    id="range"
+                    min="0"
+                    max="5"
+                    value="0"
+                    step="0.5"
+                >
+
+            </section>
+
+
+            <section>
+
+                <h3>Price Range</h3>
+
+                <ul>
+
+                    <li>
+                        <input
+                            id="0-25"
+                            type="checkbox"
+                            name="prange"
+                        >
+
+                        <label for="0-25">
+                            $0 to $25
+                        </label>
+                    </li>
+
+
+                    <li>
+                        <input
+                            id="25-50"
+                            type="checkbox"
+                            name="prange"
+                        >
+
+                        <label for="25-50">
+                            $25 to $50
+                        </label>
+                    </li>
+
+
+                    <li>
+                        <input
+                            id="50-100"
+                            type="checkbox"
+                            name="prange"
+                        >
+
+                        <label for="50-100">
+                            $50 to $100
+                        </label>
+                    </li>
+
+
+                    <li>
+                        <input
+                            id="100on"
+                            type="checkbox"
+                            name="prange"
+                        >
+
+                        <label for="100on">
+                            $100 onwards
+                        </label>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </aside>
+
+
+        <!-- =========================
+             PRODUCTS
+        ========================== -->
+
+        <main-content>
+
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search"
+            >
+
+
+            <div class="filters">
+
+                <div
+                    class="filter active"
+                    data-category="all"
+                >
+                    All
+                </div>
+
+                <div
+                    class="filter"
+                    data-category="men's clothing"
+                >
+                    Mens
+                </div>
+
+                <div
+                    class="filter"
+                    data-category="women's clothing"
+                >
+                    Womens
+                </div>
+
+                <div
+                    class="filter"
+                    data-category="jewelery"
+                >
+                    Jewellery
+                </div>
+
+                <div
+                    class="filter"
+                    data-category="electronics"
+                >
+                    Electronics
+                </div>
+
+            </div>
+
+
+            <select id="sort">
+
+                <option value="">
+                    Sort By
+                </option>
+
+                <option value="low-high">
+                    Price: Low to High
+                </option>
+
+                <option value="high-low">
+                    Price: High to Low
+                </option>
+
+                <option value="rating-high">
+                    Rating: High to Low
+                </option>
+
+            </select>
+
+
+            <section>
+
+                <h2>Products</h2>
+
+                <!-- JavaScript puts products here -->
+
+                <div
+                    class="items"
+                    id="product-container"
+                >
+                </div>
+
+            </section>
+
+        </main-content>
+
+    </main>
+
+
+    <!-- IMPORTANT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
