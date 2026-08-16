@@ -1,0 +1,77 @@
+.app {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f5f7fa;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.table-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow-x: auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+  background: #111827;
+  color: white;
+  font-weight: 600;
+}
+
+tbody tr:hover {
+  background: #f9fafb;
+}
+
+.coin-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.coin-name img {
+  width: 32px;
+  height: 32px;
+}
+
+td {
+  color: #374151;
+}
+
+.status,
+.error {
+  text-align: center;
+  margin: 20px;
+}
+
+.error {
+  color: #dc2626;
+}
+
+.positive {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.negative {
+  color: #dc2626;
+  font-weight: 600;
+}
